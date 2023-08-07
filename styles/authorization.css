@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 282px;
+    background: linear-gradient(180deg, #594EAB 0%, #1C032D 100%);
+    border-radius: 0 30px 30px 0;
+}
+.sidebar-menu{
+    width: 190px;
+    position: fixed;
+}
+/* .active-choose {
+    background-color: white;
+    border-radius: 30px 0 0 30px;
+    color: #382961 !important;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.17px;
+} */
+
+.registration-active-choose {
+    
+}
+
+.logo{
+    color: #B6B6B6;
+font-family: Inter;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.6px;
+}
+.language{
+    color: #909090;
+font-family: Inter;
+font-size: 15.839px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.713px;
+margin: 20px 0px 110px 0px;
+}
+.sidebar-menu__choose li {
+    list-style: none;
+    color: var(--text, #E7E7E7);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    padding: 10px;
+}
+.sidebar-menu__choose{
+    position: absolute;
+    right: -47px;
+}
+
+.sidebar-menu__choose li:not(:first-child) {
+    padding-top: 20px;
+}
+
+
+.sign-in-button{
+    width: 210px;
+    height: 55px;
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    margin-top: 500px;
+}
+
+
+
+.sign-in-button__text {
+    color: var(--text, #E7E7E7);
+text-align: center;
+font-family: Montserrat;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.17px;
+margin-top: 8%;
+}
+
+.page{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    width: 1300px;
+    margin: 0;
+    height: 2000px;
+    
+}
+
+.hat-images{
+    justify-content: start;
+}
+
+.hat-images img{
+    margin: 0px 10px;
+}
+
+.hat-images img:nth-child(1){
+    border-radius: 0px 10px 10px 0px;
+}
+
+.hat-images img:nth-child(n+2){
+    border-radius: 10px;
+}
+
+.authorization-block{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorization-block__title{
+    color: #000;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.8px;
+}
+
+.authorization-block__input{
+    width: 650px;
+    height: 70px;
+    border-radius: 25px;
+    border: 3px solid rgba(80, 67, 153, 0.53);
+    background: rgba(151, 151, 151, 0.00);
+    margin-top: 20px;
+    text-indent: 40px;
+}
+
+
+.authorization-block__entry-button{
+    width: 250px;
+    height: 60px;
+    border-radius: 27px;
+    background: #504398;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.authorization-block__entry-button span {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+
+.authorization-block__registration-offer{
+    margin-top: 40px;
+}
+
+.authorization-block__registration-offer span{
+    color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+
+.authorization-block__registration-offer span a {
+    color: #504398;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+
+.stroke{
+    width: 260.5px;
+    border-bottom: 1px solid #d3d0e5;
+    margin: 20px 0;
+}
+
+
+.authorization-block__api-text{
+    color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+
+
+
+.authorization-block__api-images {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.api-circle{
+    width: 52px;
+    height: 52px;
+    background-color: #F1F5FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
