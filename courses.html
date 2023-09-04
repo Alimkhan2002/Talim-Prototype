@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Talim</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <div class="hat">
+                        <div class="logo">
+                            <img src="./img/sidebar-hid/T.png">
+                        </div>
+                        <div class="language">
+                            РУС / КАЗ
+                        </div>
+                    </div>
+                    <ul class="sidebar-menu__choose">
+                        <li>
+                            <a href="index.html">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active-choose" href="courses.html">
+                                <span class="icon">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </span>
+                                <span class="text-wrap icon-text">Мой курсы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="icon">
+                                    <ion-icon name="pause-circle-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Бесплатно</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="centers.html">
+                                <span class="icon">
+                                    <ion-icon name="school-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Образовательные центры</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="authorization.html">
+                                <span class="icon">
+                                    <ion-icon name="log-in-outline"></ion-icon>
+                                </span>
+                                <span class="sign-in-button">
+                                    <span class="sign-in-button__text text-wrap">Вход / Регистрация</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="burger-button">
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+            </div>
+            <div class="burger-menu">
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Мои курсы</a></li>
+                    <li><a href="#">Бесплатно</a></li>
+                    <li><a href="#">Образовательные центры</a></li>
+                    <li><a href="#">Вход / Регистрация</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="hat-img-1" class="hat-images">
+                    <img class="hat-images-img" alt="1" src="./img/hat-images/1.png">
+                    <img class="hat-images-img" alt="2" src="./img/hat-images/3.png">
+                    <img class="hat-images-img" alt="3" src="./img/hat-images/2.png">
+                    <img class="hat-images-img" alt="4" src="./img/hat-images/4.png">
+                </div>
+                <div class="searcher align--left">
+                    <div class="searcher__elements">
+                        <h1 class="searcher__header">
+                            Курсы
+                        </h1>
+                        <div class="searcher__panel">
+                            <form class="searcher__field">
+                                <input class="searcher__field__input" placeholder="Что ты хочешь изучить?" type="text">
+                            </form>
+                            <label class="searcher__button mrg--left_20">
+                                <button data-view="list" class="searcher__button_list">
+                                    <span></span><span></span><span></span>
+                                </button>
+                            </label>
+                            <label class="searcher__button mrg--left_20">
+                                <button data-view="grid" class="searcher__button_grid">
+                                        <span class="searcher__button_grid-square"></span>
+                                        <span class="searcher__button_grid-square"></span>
+                                        <span class="searcher__button_grid-square"></span>
+                                        <span class="searcher__button_grid-square"></span>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="searcher-functions">
+                            <form class="searcher-functions__panel">
+                                <button class="searcher-functions__panel-button">По направлению</button>
+                                <button class="searcher-functions__panel-button">ЕНТ</button>
+                                <button class="searcher-functions__panel-button">Подготовка</button>
+                                <button class="searcher-functions__panel-button">Бесплатно</button>
+                                <button class="searcher-functions__panel-button">Новинки</button>
+                                <button class="searcher-functions__panel-button">Тренажёры</button>
+                            </form>
+                        </div>
+                        <div class="searcher-PriceAndLanguage">
+                            <div class="searcher-PriceAndLanguage__price">
+                                <div class="searcher-PriceAndLanguage__header">
+                                    Стоимость
+                                </div>
+                                <form class="searcher-PriceAndLanguage__price-form">
+                                    <input type="number" placeholder="От">
+                                    <input type="number" placeholder="До">
+                                </form>
+                            </div>
+                            <div class="searcher-PriceAndLanguage__language">
+                                <div class="searcher-PriceAndLanguage__language-container">
+                                    <div class="searcher-PriceAndLanguage__header">
+                                        Язык
+                                    </div>
+                                    <form class="searcher-PriceAndLanguage__language-form">
+                                        <div class="searcher-PriceAndLanguage__language-form-element">
+                                            <input type="radio" id="lang1" name="lang" />
+                                            <label for="lang1">Все</label>
+                                        </div>
+                                        <div class="searcher-PriceAndLanguage__language-form-element">
+                                            <input type="radio" id="lang2" name="lang" />
+                                            <label for="lang2">Казахский язык</label>
+                                        </div>
+                                        <div class="searcher-PriceAndLanguage__language-form-element">
+                                            <input type="radio" id="lang3" name="lang" />
+                                            <label for="lang3">Русский язык</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classList">
+                        <div class="classList__header">
+                            Список курсов
+                        </div>
+                        <div class="classList__container items">
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="classList-element">
+                                <div class="classList-element-square">
+                                    <span class="classList-element__img"></span>
+                                    <span class="classList-element__img-line-1"></span>
+                                    <span class="classList-element__img-line-2"></span>
+                                </div>
+                                <div class="classList-element__text">
+                                    <div class="classList-element__text-header">
+                                        Курс разделов Алгебры
+                                    </div>
+                                    <div class="classList-element__text-description">
+                                        Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
+                                    </div>
+                                </div>
+                                <div class="classList-element__btn">
+                                    <div class="classList-element__button">
+                                        <button>Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script-2.js"></script>
+    <script src="./scripts/hamburger.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const items = document.querySelector('.items');
+        const temp = localStorage.getItem('temp');
+        items.dataset.temp = temp;
+
+        document.querySelectorAll('button[data-view]').forEach(item => {
+            item.addEventListener('click', () => {
+                const view = item.dataset.view;
+                // console.log(view);
+                items.dataset.temp = view;
+                localStorage.setItem('temp', view);
+            })
+        })
+    </script>
+</body>
+</html>

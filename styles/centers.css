@@ -1,0 +1,58 @@
+.searcher__header--centers p{
+    display: flex;
+    justify-content: center;
+}
+
+.searcher__elements-container{
+    width: 100%;
+    background-image: url(../img/centers/centers-bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    border-radius: 30px;
+}
+
+.searcher__elements-container--element{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searcher__elements-container--element h1{
+    font-size: 2.5vw;
+    color: #E7E7E7;
+}
+
+.white-E7{
+    color: #E7E7E7;
+}
+.searcher-functions__panel button{
+    color: #E7E7E7;
+    border: 1px solid white;
+}
+.searcher__elements--100{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.searcher__field input{
+    border: 1px solid white;
+}
+
+.searcher-PriceAndLanguage--container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searcher-PriceAndLanguage--2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 80%;
+}
