@@ -251,6 +251,13 @@ label {
         justify-content: flex-end;
     }
 }
+.items[data-temp="list"] {
+
+    .classList-element-square{
+        display: none;
+    }
+
+}
 
 .classList-element{
     display: flex;
@@ -364,6 +371,9 @@ letter-spacing: 0.111px;
     }
     .classList-element__text-description{
         font-size: 1.2vw;
+    }
+    .searcher-functions__panel-button p{
+        word-break: break-all;
     }
 }
 
