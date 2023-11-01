@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/courses.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/centers.css">
+    <link rel="stylesheet" href="styles/free.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="free.html">
                                 <span class="icon">
                                     <ion-icon name="pause-circle-outline"></ion-icon>
                                 </span>
@@ -53,7 +54,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="active-choose" href="index.html">
+                            <a class="active-choose" href="centers.html">
                                 <span class="icon">
                                     <ion-icon name="school-outline"></ion-icon>
                                 </span>
@@ -123,12 +124,12 @@
                                 </div>
                                 <div class="searcher-functions">
                                     <form class="searcher-functions__panel">
-                                        <button class="searcher-functions__panel-button">НИШ</button>
-                                        <button class="searcher-functions__panel-button">ЕНТ</button>
-                                        <button class="searcher-functions__panel-button">Подготовка</button>
-                                        <button class="searcher-functions__panel-button">Бесплатно</button>
-                                        <button class="searcher-functions__panel-button">Новинки</button>
-                                        <button class="searcher-functions__panel-button">Тренажёры</button>
+                                        <button id="btn1" class="searcher-functions__panel-button">НИШ</button>
+                                        <button id="btn2" class="searcher-functions__panel-button">ЕНТ</button>
+                                        <button id="btn3" class="searcher-functions__panel-button">Подготовка</button>
+                                        <button id="btn4" class="searcher-functions__panel-button">Бесплатно</button>
+                                        <button id="btn5" class="searcher-functions__panel-button">Новинки</button>
+                                        <button id="btn6" class="searcher-functions__panel-button">Тренажёры</button>
                                     </form>
                                 </div>
                             </div>
@@ -151,15 +152,15 @@
                                     </div>
                                     <form class="searcher-PriceAndLanguage__language-form">
                                         <div class="searcher-PriceAndLanguage__language-form-element">
-                                            <input type="radio" id="lang1" name="lang" />
+                                            <input onclick="hideShowDiv(1)" type="radio" id="lang1" name="lang" />
                                             <label for="lang1">Все</label>
                                         </div>
                                         <div class="searcher-PriceAndLanguage__language-form-element">
-                                            <input type="radio" id="lang2" name="lang" />
+                                            <input onclick="hideShowDiv(2)" type="radio" id="lang2" name="lang" />
                                             <label for="lang2">Казахский язык</label>
                                         </div>
                                         <div class="searcher-PriceAndLanguage__language-form-element">
-                                            <input type="radio" id="lang3" name="lang" />
+                                            <input onclick="hideShowDiv(3)" type="radio" id="lang3" name="lang" />
                                             <label for="lang3">Русский язык</label>
                                         </div>
                                     </form>
@@ -172,10 +173,10 @@
                     
                     <div class="classList">
                         <div class="classList__header">
-                            Список курсов
+                            Список центров
                         </div>
                         <div class="classList__container items">
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all ru dir1" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -183,7 +184,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 1 dir1
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -191,11 +192,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all ru dir1" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -203,7 +204,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 2 dir1
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -211,11 +212,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all ru dir1" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -223,7 +224,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 3 dir1
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -231,11 +232,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir6" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -243,7 +244,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 4 dir6
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -251,11 +252,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir2" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -263,7 +264,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 5 dir2
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -271,11 +272,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir2" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -283,7 +284,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 6 dir2
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -291,11 +292,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir3" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -303,7 +304,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 7 dir3
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -311,11 +312,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir4" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -323,7 +324,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 8 dir4
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -331,11 +332,11 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element">
+                            <div id="item" class="classList-element all kz dir5" >
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -343,7 +344,7 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                         Курс
+                                         Образовательный Центр 9 dir5
                                     </div>
                                     <div class="classList-element__text-description">
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
@@ -351,7 +352,7 @@
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <button><a href="centers_unit.html">Купить</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -359,11 +360,25 @@
                     </div>
                 </div>
             </div>
+            <div class="footerInfo">
+                <div class="logo">
+                    <img src="./img/sidebar-hid/T.png">
+                    <p>олько победа</p>
+                </div>
+                <ul class="footerInfoList">
+                    <li>О нас</li>
+                    <li>Команда</li>
+                    <li>Контакты</li>
+                    <li>Новости</li>
+                    <li>8 (800) 555 35 35 </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/script-2.js"></script>
+    <!-- <script src="./scripts/script-2.js"></script> -->
     <script src="./scripts/hamburger.js"></script>
+    <script src="./scripts/sorting.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>

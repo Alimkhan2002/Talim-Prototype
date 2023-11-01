@@ -1,0 +1,154 @@
+
+
+.freeHeader{
+    width: 40%;
+    height: 100px;
+    border-radius: 40px;
+    border: 3px solid #504398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeHeader p {
+    color: #2A2A2A;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.freeElement{
+    border-radius: 55px;
+    border: 3px solid #A8AADA;
+    width: 952px;
+    height: 454px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.freeElementContainer{
+    width: 80%;
+
+}
+
+.freeElementHeader h1{
+    color: #2A2A2A;
+    font-family: Montserrat;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.freeElementDescription{
+    margin: 40px 0;
+    color: #2A2A2A;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.freeElementButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.freeElementButtons button{
+    cursor: pointer;
+    width: 169px;
+    height: 47.727px;
+    border-radius: 19.56px;
+    border: 2px solid #504398;
+    background: rgba(80, 67, 152, 0.00);
+}
+
+.freeElementButton-3{
+    border-radius: 23px;
+    background: #504398;
+    width: 169px;
+}
+
+.freeElementButton-3 button{
+    color: white;
+}
+
+.freeElement_two{
+    margin: 50px 0;
+    width: 952px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.freeElement_{
+    height: 454px;
+    width: 45%;
+    text-align: center;
+    border-radius: 55px;
+    border: 3px solid #A8AADA;
+}
+
+.freeElementHeader_2{
+    color: #2A2A2A;
+    font-family: Montserrat;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.freeElementButtons_2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.freeElementButtons_2 button{
+    cursor: pointer;
+    width: 169px;
+    height: 47.727px;
+    border-radius: 19.56px;
+    border: 2px solid #504398;
+    background: rgba(80, 67, 152, 0.00);
+}
+
+.buttonMrg{
+    margin: 10px 0;
+}
+
+.footerInfo{
+    /* border-top: 1px black solid; */
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 20px;
+    /* left: 0; */
+}
+
+.footerInfoList {
+    list-style-type: none;
+    color: #8D8D8D;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.17px;
+}
+
+.footerInfoList li{
+    margin: 5px 0;
+    cursor: pointer;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/range.css">
+    <link rel="stylesheet" href="styles/courses_unit.css">
+    <title>Talim</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <div class="hat">
+                        <div class="logo">
+                            <img src="./img/sidebar-hid/T.png">
+                        </div>
+                        <div class="language">
+                            РУС / КАЗ
+                        </div>
+                    </div>
+                    <ul class="sidebar-menu__choose">
+                        <li>
+                            <a href="index.html">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active-choose" href="courses.html">
+                                <span class="icon">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </span>
+                                <span class="text-wrap icon-text">Мой курсы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="free.html">
+                                <span class="icon">
+                                    <ion-icon name="pause-circle-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Бесплатно</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="centers.html">
+                                <span class="icon">
+                                    <ion-icon name="school-outline"></ion-icon>
+                                </span>
+                                <span class="icon-text">Образовательные <br> центры</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="authorization.html">
+                                <span class="icon">
+                                    <ion-icon name="log-in-outline"></ion-icon>
+                                </span>
+                                <span class="sign-in-button">
+                                    <span class="sign-in-button__text text-wrap">Вход / Регистрация</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger-button">
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+                <div class="menulogo"></div>
+            </div>
+            <div class="burger-menu">
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Мои курсы</a></li>
+                    <li><a href="#">Бесплатно</a></li>
+                    <li><a href="#">Образовательные центры</a></li>
+                    <li><a href="#">Вход / Регистрация</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <!-- <div id="hat-img-1" class="hat-images">
+                    <img class="hat-images-img" alt="1" src="./img/hat-images/1.png">
+                    <img class="hat-images-img" alt="2" src="./img/hat-images/3.png">
+                    <img class="hat-images-img" alt="3" src="./img/hat-images/2.png">
+                    <img class="hat-images-img" alt="4" src="./img/hat-images/4.png">
+                </div> -->
+                <div class="best-recommendations">
+                    <div class="best-recommendations-block">
+                        <div class="best-recommendations-block-sec">
+                            <div class="best-recommendations-block-sec_header">
+                                Лучшие рекомендации по поводу курсов
+                            </div>
+                            <div class="best-recommendations-block-sec_description">
+                                Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. 
+                            </div>
+                            <div class="signUpOnCourse">
+                                <button><p>Записаться на курс</p></button>
+                            </div>
+                        </div>
+                        <div class="best-recommendations-block-sec">
+                            <div class="best-recommendations-block-sec_discount">
+                                <div class="best-recommendations-block-sec_discount-img">
+                                    <img src="img/courses_unit/best-recommendations-block-sec_discount-img/free-icon-percentage-563491 2.png">
+                                </div>
+                                <div class="best-recommendations-block-sec_discount-text">
+                                    Скидка на курс 25%
+                                </div>
+                            </div>
+                            <div class="best-recommendations-block-sec_img">
+                                <img src="img/courses_unit/best-recommendations-block-sec_discount-img/egor-myznik-1dx1gvuT45o-unsplash 1.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stats_ammount">
+                        <div class="stats_ammount-section">
+                            <p><span>15</span> разделов</p>
+                        </div>
+                        <div class="stats_ammount-section">
+                            <p><span>244</span> урока</p>
+                        </div>
+                        <div class="stats_ammount-section">
+                            <p><span>300</span> часов</p>
+                        </div>
+                    </div>
+                    <div class="stats_about">
+                        <div class="stats_about-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                                <circle cx="23.5" cy="23.5" r="22.5" stroke="#4C3E91" stroke-width="2"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="37" viewBox="0 0 16 37" fill="none">
+                                <path d="M8 2L14.5 18.75L8 35.5L1 18.75L8 2Z" fill="url(#paint0_linear_1821_466)"/>
+                                <path d="M8 2V21.5M8 2L14.5 18.75M8 2L1 18.75M8 35.5V21.5M8 35.5L1 18.75M8 35.5L14.5 18.75M8 21.5L1 18.75M8 21.5L14.5 18.75" stroke="black" stroke-opacity="0.35"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1821_466" x1="7" y1="4.5" x2="12" y2="27" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0DFD08"/>
+                                <stop offset="1" stop-color="#38AD35" stop-opacity="0.95"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <p>Проверка Д/З</p>
+                        </div>
+                        <div class="stats_about-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                                <circle cx="23.5" cy="23.5" r="22.5" stroke="#4C3E91" stroke-width="2"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="37" viewBox="0 0 16 37" fill="none">
+                                <path d="M8 2L14.5 18.75L8 35.5L1 18.75L8 2Z" fill="url(#paint0_linear_1821_466)"/>
+                                <path d="M8 2V21.5M8 2L14.5 18.75M8 2L1 18.75M8 35.5V21.5M8 35.5L1 18.75M8 35.5L14.5 18.75M8 21.5L1 18.75M8 21.5L14.5 18.75" stroke="black" stroke-opacity="0.35"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1821_466" x1="7" y1="4.5" x2="12" y2="27" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0DFD08"/>
+                                <stop offset="1" stop-color="#38AD35" stop-opacity="0.95"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <p>Обратная связь</p>
+                        </div>
+                        <div class="stats_about-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                                <circle cx="23.5" cy="23.5" r="22.5" stroke="#4C3E91" stroke-width="2"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="37" viewBox="0 0 16 37" fill="none">
+                                <path d="M8 2L14.5 18.75L8 35.5L1 18.75L8 2Z" fill="url(#paint0_linear_1821_466)"/>
+                                <path d="M8 2V21.5M8 2L14.5 18.75M8 2L1 18.75M8 35.5V21.5M8 35.5L1 18.75M8 35.5L14.5 18.75M8 21.5L1 18.75M8 21.5L14.5 18.75" stroke="black" stroke-opacity="0.35"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1821_466" x1="7" y1="4.5" x2="12" y2="27" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0DFD08"/>
+                                <stop offset="1" stop-color="#38AD35" stop-opacity="0.95"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            <p>Практика</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers">
+                    <h2>Преподаватели</h2>
+                    <div class="teachersBlock">
+                        <div class="teachersBlock_unit">
+                            <div class="teachersBlock_unit-section">
+                                <img src="img/courses_unit/teachersBlock_unit-section/artsiom-kavaliou-SRx9JBesvSE-unsplash 2.svg">
+                            </div>
+                            <div class="teachersDescription">
+                                <p>Человек Ч.Ч</p>
+                                <p>предмет: Математика</p>
+                                <p>Опыт преподавания: 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="teachersBlock_unit">
+                            <div class="teachersBlock_unit-section">
+                                <img src="img/courses_unit/teachersBlock_unit-section/sander-weeteling-dq7Wlq_evnc-unsplash 2.svg">
+                            </div>
+                            <div class="teachersDescription">
+                                <p>Человек Ч.Ч</p>
+                                <p>предмет: Математика</p>
+                                <p>Опыт преподавания: 5 лет</p>
+                            </div>
+                        </div>
+                        <div class="teachersBlock_unit">
+                            <div class="teachersBlock_unit-section">
+                                <img src="img/courses_unit/teachersBlock_unit-section/max-titov-qcUPZGZxUI0-unsplash 2.svg">
+                            </div>
+                            <div class="teachersDescription">
+                                <p>Человек Ч.Ч</p>
+                                <p>предмет: Математика</p>
+                                <p>Опыт преподавания: 5 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courseDescription">
+                    <div class="courseDescription-block">
+                        <div class="courseDescription-block_header">
+                            О курсе
+                        </div>
+                        <div class="courseDescription-block_description">
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. 
+                        </div>
+                    </div>
+                </div>
+                <div class="chapterManualBlock">
+                    <h1>Разделы которые вы изучите</h1>
+                    <div class="chapterManual">
+                        <div class="chapterManual_section">
+                            <div class="chapterManual_section-1">
+                                1
+                            </div>
+                            <div class="chapterManual_section-2">
+                            </div>
+                            <div class="chapterManual_section-3">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum 
+                            </div>
+                        </div>
+                        <div class="chapterManual_section">
+                            <div class="chapterManual_section-1">
+                                2
+                            </div>
+                            <div class="chapterManual_section-2">
+                            </div>
+                            <div class="chapterManual_section-3">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum 
+                            </div>
+                        </div>
+                        <div class="chapterManual_section">
+                            <div class="chapterManual_section-1">
+                                3
+                            </div>
+                            <div class="chapterManual_section-2">
+                            </div>
+                            <div class="chapterManual_section-3">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum 
+                            </div>
+                        </div>
+                        <div class="chapterManual_section">
+                            <div class="chapterManual_section-1">
+                                4
+                            </div>
+                            <div class="chapterManual_section-2">
+                            </div>
+                            <div class="chapterManual_section-3">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum 
+                            </div>
+                        </div>
+                        <div class="chapterManual_section">
+                            <div class="chapterManual_section-1">
+                                5
+                            </div>
+                            <div class="chapterManual_section-2">
+                            </div>
+                            <div class="chapterManual_section-3">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videoPlayer-1">
+                        <img src="img/courses_unit/videoPlayer-1/Group 193.svg">
+                    </div>
+                </div>
+                <div class="buyOffer">
+                    <h1>Купить курс</h1>
+                    <div class="offer">
+                        <div class="offer_info">
+                            <h1>Купите курс и обучайтесь вместе с нами!</h1>
+                            <div class="offer_info-price">
+                                <div class="offer_info-oldPrice">
+                                    39 990 тг
+                                </div>
+                                <div class="offer_info-newPrice">
+                                    12 990 тг
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer_field">
+                            <div class="offer_field-inputBlock">
+                                <div class="offer_field-input">
+                                    <input type="name" placeholder="Имя">
+                                </div>
+                                <div class="offer_field-input">
+                                    <input type="number" placeholder="Телефон">
+                                </div>
+                                <div class="offer_field-input">
+                                    <input type="email" placeholder="Электронная почта">
+                                </div>
+                            </div>
+                            <div class="offer_field-button">
+                                <button>Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <!-- <script src="./scripts/script-2.js"></script> -->
+    <script src="./scripts/hamburger.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        const items = document.querySelector('.items');
+        const temp = localStorage.getItem('temp');
+        items.dataset.temp = temp;
+        document.querySelectorAll('button[data-view]').forEach(item => {
+            item.addEventListener('click', () => {
+                const view = item.dataset.view;
+                items.dataset.temp = view;
+                localStorage.setItem('temp', view);
+            })
+        })
+    </script>
+    <script src="./scripts/sorting.js"></script>
+    <script src="/scripts/range.js"></script>
+</body>
+</html>

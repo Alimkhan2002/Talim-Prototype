@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/courses.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/free.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/range.css">
     <title>Talim</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="page">
-            <div class="sidebar">
+            <div id="sidebar" class="sidebar">
                 <div class="sidebar-menu">
                     <div class="hat">
                         <div class="logo">
@@ -44,7 +46,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="free.html">
                                 <span class="icon">
                                     <ion-icon name="pause-circle-outline"></ion-icon>
                                 </span>
@@ -120,13 +122,25 @@
                         </div>
                         <div class="searcher-functions">
                             <form class="searcher-functions__panel">
-                                <button class="searcher-functions__panel-button"><p>По<br> направлению</p></button>
-                                <button class="searcher-functions__panel-button"><p>ЕНТ</p></button>
+                                <button type="button" id="div1" class="searcher-functions__panel-button"><p>По<br> направлению</p></button>
+                                <ul id="kek" style="display: none;">
+                                    <li><button onclick="Div(1)" id="nap1" type="button">биология</button></li>
+                                    <li><button onclick="Div(2)" id="nap2" type="button">математика</button></li>
+                                    <li><button onclick="Div(3)" id="nap3" type="button">обществознание</button></li>
+                                </ul>
+
+                                <button class="searcher-functions__panel-button cock"><p>ЕНТ</p></button>
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
                                 <button class="searcher-functions__panel-button"><p>Подготовка</p></button>
                                 <button class="searcher-functions__panel-button"><p>Бесплатно</p></button>
                                 <button class="searcher-functions__panel-button"><p>Новинки</p></button>
                                 <button class="searcher-functions__panel-button"><p>Тренажёры</p></button>
                             </form>
+                            
                         </div>
                         <div class="searcher-PriceAndLanguage">
                             <div class="searcher-PriceAndLanguage__price">
@@ -134,9 +148,29 @@
                                     Стоимость
                                 </div>
                                 <form class="searcher-PriceAndLanguage__price-form">
-                                    <input type="number" placeholder="От">
-                                    <input type="number" placeholder="До">
+                                    <input id="inp-min" value="12000" type="number" placeholder="От">
+                                    <input id="inp-max" value="18000" type="number" placeholder="До">
                                 </form>
+                                <input id="butt" type="button" value="Кнопка" />
+                                <div id="str"></div>
+                                <!-- <div class="price-input">
+                                    <div class="field">
+                                      <span>Min</span>
+                                      <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                      <span>Max</span>
+                                      <input type="number" class="input-max" value="7500">
+                                    </div>
+                                  </div>
+                                  <div class="slider">
+                                    <div class="progress"></div>
+                                  </div>
+                                  <div class="range-input">
+                                    <input type="range" id="min" class="range-min" min="0" max="10000" value="2300" step="100">
+                                    <input type="range" id="max" class="range-max" min="0" max="10000" value="7500" step="100">
+                                  </div> -->
                             </div>
                             <div class="searcher-PriceAndLanguage__language">
                                 <div class="searcher-PriceAndLanguage__language-container">
@@ -166,7 +200,7 @@
                             Список курсов
                         </div>
                         <div class="classList__container items">
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="15000" class="classList-element 10-20k ru all biology">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -174,19 +208,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ
+                                        Курс разделов Алгебры НА РУССКОМ 15 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                    <b>Направление: Биология</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="17000" class="classList-element 10-20k ru all biology">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -194,19 +229,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ
+                                        Курс разделов Алгебры НА РУССКОМ 17 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                    <b>Направление: Биология</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="20000" class="classList-element 20-30k ru all biology">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -214,19 +250,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ
+                                        Курс разделов Алгебры НА РУССКОМ 20 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Биология</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="23000" class="classList-element 20-30k ru all mathematic">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -234,19 +271,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ 23 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Математика</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="25000" class="classList-element 20-30k ru all mathematic">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -254,19 +292,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ 25 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Математика</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element ru all">
+                            <div id="item" data-price="30000" class="classList-element 30-40k ru all mathematic">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -274,19 +313,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА РУССКОМ ЯЗЫКЕ 30 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Математика</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element kz all">
+                            <div id="item" data-price="35000" class="classList-element 30-40k kz all obshestvo">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -294,19 +334,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ 35 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Обществознание</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element kz all">
+                            <div id="item" data-price="38000" class="classList-element 30-40k kz all obshestvo">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -314,19 +355,20 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ 38 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Обществознание</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
-                            <div id="item" class="classList-element kz all">
+                            <div id="item" data-price="39000" class="classList-element 30-40k kz all obshestvo">
                                 <div class="classList-element-square">
                                     <span class="classList-element__img"></span>
                                     <span class="classList-element__img-line-1"></span>
@@ -334,21 +376,56 @@
                                 </div>
                                 <div class="classList-element__text">
                                     <div class="classList-element__text-header">
-                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ
+                                        Курс разделов Алгебры НА КАЗАХСКОМ ЯЗЫКЕ 39 тысяч
                                     </div>
                                     <div class="classList-element__text-description">
+                                        <b>Направление: Обществознание</b>
                                         Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
                                     </div>
                                 </div>
                                 <div class="classList-element__btn">
                                     <div class="classList-element__button">
-                                        <button>Купить</button>
+                                        <a href="courses_unit.html"><button>Купить</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <form class="searcher-functions__panel">
+                    <button type="button" id="div1" class="searcher-functions__panel-button"><p>По<br> направлению</p></button>
+                    <ul id="kek" style="display: none;">
+                        <li><button onclick="Div(1)" id="nap1" type="button">биология</button></li>
+                        <li><button onclick="Div(2)" id="nap2" type="button">математика</button></li>
+                        <li><button onclick="Div(3)" id="nap3" type="button">обществознание</button></li>
+                    </ul>
+
+                    <button class="searcher-functions__panel-button cock"><p>ЕНТ</p></button>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    <button class="searcher-functions__panel-button"><p>Подготовка</p></button>
+                    <button class="searcher-functions__panel-button"><p>Бесплатно</p></button>
+                    <button class="searcher-functions__panel-button"><p>Новинки</p></button>
+                    <button class="searcher-functions__panel-button"><p>Тренажёры</p></button>
+                </form>
+                
+            </div>
+            <div class="footerInfo">
+                <div class="logo">
+                    <img src="./img/sidebar-hid/T.png">
+                    <p>олько победа</p>
+                </div>
+                <ul class="footerInfoList">
+                    <li>О нас</li>
+                    <li>Команда</li>
+                    <li>Контакты</li>
+                    <li>Новости</li>
+                    <li>8 (705) 833 4574 76</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -358,19 +435,19 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
+
         const items = document.querySelector('.items');
         const temp = localStorage.getItem('temp');
         items.dataset.temp = temp;
-
         document.querySelectorAll('button[data-view]').forEach(item => {
             item.addEventListener('click', () => {
                 const view = item.dataset.view;
-                // console.log(view);
                 items.dataset.temp = view;
                 localStorage.setItem('temp', view);
             })
         })
     </script>
     <script src="./scripts/sorting.js"></script>
+    <!-- <script src="/scripts/range.js"></script> -->
 </body>
 </html>
