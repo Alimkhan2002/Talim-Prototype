@@ -93,8 +93,16 @@
     /* width: 750px; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
 }
+/* 
+.searcher-functions__panel li{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .searcher-functions__panel-button {
     width: 15%;
@@ -112,12 +120,15 @@
     background: rgba(0, 0, 0, 0.00);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    list-style-type: none;
+    text-align: center;
 }
 .searcher-functions__panel-button:hover{
     background:  rgba(122, 122, 122, 0.3);
 }
 
 .searcher-PriceAndLanguage{
+    margin: 20px 0;
     display: flex;
     height: 100px;
     width: 100%;
@@ -132,6 +143,15 @@
     /* align-items: center; */
 }
 
+.searcherBtn{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border: none;
+    background: #8000FF;
+}
 
 
 .searcher-PriceAndLanguage__header{
@@ -469,3 +489,59 @@ letter-spacing: 0.111px;
 }
 
 
+
+
+.searcher-functions__panel-button ul{
+    display: none;
+
+    position: relative;
+    list-style-type: none;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.searcher-functions__panel-button ul li {
+    height: 50px;
+    background-color: #d3d3d3;
+    border: #7B7B7B 1px solid;
+    transition: 0.5s ease;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.searcher-functions__panel-button ul li:hover{
+    opacity: 0.9;
+}
+
+.searcher-functions__panel-button ul li button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: inherit;
+}
+
+.searcher-functions__panel-button ul li p {
+    margin-top: 8%;
+}
+
+.searcher-functions__panel-button ul li ul {
+    display: none;
+
+    width: 180px;
+    position: absolute;
+    left: 100%;
+    bottom: -50px;
+}
+
+
+
+.searcher-functions__panel-button:hover > ul {
+    display: initial;
+
+}
+
+.innerList:hover ul{
+
+    display: initial;
+}

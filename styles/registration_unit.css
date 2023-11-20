@@ -1,0 +1,68 @@
+.private{
+    width: 1192px;
+    height: 709px;
+    border-radius: 24px;
+background: #EDF1FE;
+}
+
+.private_photo{
+    display: flex;
+    margin: 30px 0 0 30px;
+}
+
+
+
+.private_photo h2{
+    margin: 50px 0 0 30px;
+}
+
+
+.private_photo_socket1{
+    position: relative;
+}
+
+.private_photo_socketImg2 {
+    right: 30%;
+    bottom: 35%;
+    position: absolute;
+    width: 82.305px;
+height: 75.571px;
+}
+
+.private_field{
+    margin-left: 30px;
+}
+
+.private_field2{
+    margin-top: 20px;
+}
+
+.private_fieldInput{
+    width: 250px;
+height: 49px;
+stroke: rgba(57, 53, 80, 0.40);
+border: none;
+border-radius: 20px;
+border: 1px solid rgba(57, 53, 80, 0.40);
+}
+
+
+
+.private_fieldInput2{
+    margin-top: 40px;
+    width: 325px;
+height: 49px;
+border: 1px solid rgba(57, 53, 80, 0.40);
+stroke: rgba(57, 53, 80, 0.40);
+border-radius: 20px;
+}
+
+.private_button button{
+    color: white;
+    margin: 70px 0 0 30px ;
+    border-radius: 27px;
+background: rgba(131, 68, 212, 0.94);
+    width: 220px;
+height: 68px;
+flex-shrink: 0;
+}
